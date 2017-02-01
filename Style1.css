@@ -26,11 +26,14 @@ title{
 {
 	float: right;
 	text-align:center;
+	display:flex;
+	padding:0px;
 }
 
 .img
 {
 	float:left;
+	display:flex;
 }
 body {
     
@@ -56,10 +59,15 @@ h4{
 }
 
 .toc{
+	padding:0px;
+	width:25%;
+	height:100%;
 	float:left;
-	width:400px;
-	height:500px;
-	padding-left:0px;
+}
+.h{
+	text-decoration:none;
+	list-style-type:none;
+	
 }
 
 .heading{
@@ -71,7 +79,10 @@ h4{
 .chapters{
 	background-color: #4aabc5;
 	font-family: cursive, Times New Roman;
+	width:75%;
+	height:100%;
 	float:right;
+
 }
 
 
@@ -85,5 +96,5 @@ h4{
 
 .footer{
 	text-align:center;
-	float:bottom;
+	clear:both;
 }
