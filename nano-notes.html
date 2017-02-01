@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Nano Notes</title>
+		<link rel="Stylesheet" href= "style1.css">
+	</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<div class="img">
+				<img src="Title.jpg" alt="" height=242 width=242>
+			</div>
+			<div>
+				<h1>My Notes</h1>
+			</div>			
+		</div>
+	</div>		
+	<div>
+		<div class="toc">
+			<div class="description">
+				<h2>Table of contents</h2>
+					<nav>
+						<ol type="1">					 
+							<li> <a href="#c1">The Basics of WEB and HTML</a></li>
+								<ol type="i">
+									<li> <a href="#l1">How the Web Works</a></li>
+									<li> <a href="#l2">HTML Basics</a></li>
+									<li> <a href="#l3">HTML Tags</a></li>
+									<li><a href="#l4">Why Computers are Stupid</a></li>
+									<li><a href="#l5">Inline Vs. block element</a></li>
+									<li><a href="#l6"> HTML Attributes</a></li>
+									<li><a href="#l7">HTML document structure</a></li>
+								</ol>
+							<li><a href="#c2">The Basics of theHTML with CSS</a></li>
+								<ol type="i">
+									<li><a href="#l8">What is CSS?</a></li>
+									<li><a href="#l9">Developer tools and usage</a></li>
+									<li><a href="#l10">Tree-Structure in HTML</a></li>
+									<li><a href="#l11">What is Boxes, grids in HTML documents</a></li>
+								</ol>
+							<li><a href="#c2">Adding CSS style to HTML document</a></li>	
+								<ol type="i">
+									<li><a href="#l12">How to define CSS to a HTML document?</a></li>
+									<li><a href="#l13">Understanding CSS</a></li>
+									<li><a href="#l14">CSS selectors</a></li>
+									<li><a href="#l15">Structure of the Box</a></li>
+									<li><a href="#l16">How to position the boxes?</a></li>
+								</ol>
+						</ol>
+					</nav>
+			</div>
+		</div>
+		<div class="chapters">
+			<h2>Important Concepts</h2>
+				<h3 id="C1"> Chapter 1: The Basics of the <em>WEB</em> and <em>HTML</em> </h3>
+					<div>
+						<div class="description">
+							<h4 class="heading" id="l1"> <b> 1. How the Web Works </b> </h4>
+						
+						<!--&nbsp; tag is used to provide 1 space, So in order to create a tab use 5 of them -->
+							<div>
+								<p>
+									The web is a bunch of computers that communicate with each other. It is composed largely of HTML documents where HTML stands for <i>Hyper Text 	Markup Language</i> and it is the language the browsers use to interpret web pages. The components of the web include the client (your computer and browser), the Internet, and servers. The client and servers interact through <em>Hypertext Transfer Protocol (HTTP)</em>.
+									<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For instance, When a person goes to a web page like <a href="https://www.wikipedia.org/"> www.wikipedia.com</a> on the computer browser, then the browser sends a <em><b>HTTP Request</b></em> via <b>Internet</b> to the <em><b>Server</b></em>. The server finds the appropriate HTML document and sends it back to the user's computer where a <em>web browser</em> interprets the page and display it on the user's screen. Here is <a href="https://www.youtube.com/watch?v=NBI9kXzMHS0">link</a> that explains this concept best!
+								</p>
+							</div>
+						</div>
+				</div>
+				<div class="description">
+					<h4 class="heading" id="L2"> 2. HTML Basics </h4>
+						<div>
+							What is HTML (<em>Hyper Text Markup Language</em>) really made up of? They are 4 main components of HTML,which are as follows:
+								<ol type="1">
+									<li>Basic text content - It defines <em>"what you see"</em>, the text seen by the user in unedited form.</li>
+									<li>Mark up language - It defines <em>"what the content should look like"</em>,like headings, bold text,.</li>
+									<li>References to other pages - It enable a <em>link to other Html documents</em> related to the content.</li>
+									<li>Reference to images and videos - This enables to <em>insert images and video</em> content into the page.</li>
+								</ol>
+								<a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675460/lessons/3873828673/concepts/487243400923#">This video</a> helps in understanding the above concept.
+						</div>
+				</div>
+				<div  class="description">
+					<h4 class="heading" id="L3"> 3. HTML Tags </h4>
+						<div>						
+						HTML language is defined by tags, they are structured as below;<br>
+								<!-- pre tag is called the preformatted text, used to create a new block paragraph , it also parses any content in it as normal text. If any tags are inserted in it, it will get processed as normal text. -->
+							<div>
+								opening tag represented as &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> 	&lt;tag_name&gt;</b><br>
+								"All the text <b>content</b> visible to user"<br>
+								closing tag represented as  &nbsp;&nbsp; &nbsp;&nbsp;<b>&lt;/tag_name&gt;</b><br>
+								Html structure with closing and ending tags is called as an "Element".<br>
+								<u><b>Element: &lt;tag_name&gt; content &lt;/tag_name&gt;</b></u>
+								HTML elements are used to tell a web browser, <em>"how to display content on a web page"</em>.
+							</div>	
+							
+								This <a href = "https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675460/lessons/3873828673/concepts/487234440923"> video</a> helps in understand the concept about  element. <br><br>
+
+							Different types of elements discussed;<br><br>
+							<ol type=i>
+								<li><b> &lt;b&gt; tag </b>- This tag makes the text bold or thick.
+								For instance: Hello! this is an experiment text. To make the "experiment text" look bold we use &lt;b > tag to that perticular text 
+								Hello! this is an <u><b>experiment text</b></u>.</li>
+
+								<li><b>&lt;em&gt; tag</b>- This tag emphasis the text by making it italic
+									Example Text: Hello! "there this is an example text". To make "example" in the sentence emphasized we apply &lt;em&gt; tag it gives the following result: <br> Hello! there this is an <u><em>example</em></u> text.</li>
+
+								<li> <b>&lt;p&gt; tag</b>- Defines a <em>paragraph</em>. The content of the &lt;p&gt; element is created inside a "box".</li>
+
+								<li><b>&lt;br&gt;tag </b>- Creates a <em>line break</em>, and starts a new line.</li>
+
+								<li><b>&lt;div&gt; tag</b>- Creates a <em>"box"</em> container element.</li>
+
+								<li><b>&lt;span&gt;tag</b>- Creates an <em>"inline"</em> container element.</li>
+
+								<li><b>&lt;img&gt; tag</b>- This tag is used to insert images into the document.</li>
+
+								<li><b>&lt;a&gt; tag</b>- This tag is called anchor tag, its used to embed another pages within the current document by creating a link.</li>
+							</ol>
+						</div>
+				</div>
+				<div  class="description">
+					<h4 class="heading" id="l4">4. Why Computers are Stupid</h4>
+						<div>
+							<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When a program has written by a programmer in natural language the computer takes it meaning literaly. In order to make it understand different human languages is tough since it doesnt apply context while processing.<br>
+
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For instance in spoken languages, we can craft sentences with a great deal of<b> ambiguity</b>. Consider, for example, the sentence "Each of us saw her duck." Does that mean each of us saw her pet duck? Or did we each see her duck under something? Depending on the context, you might be able to infer which interpretation is correct.<br>
+
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to solve the problem of ambiguity, Computers are programmed with computer understandable languages called programming.
+							</p>
+						</div>
+				</div>
+				<div class="description">
+						<h4 class="heading" id="l5">5. Inline Vs. block element</h4>
+						<p>
+							Inline elements are those which can be executed anywhere on the document but the output is reflected on one line only.<br><br>
+							For reference: &lt;br&gt; break tag, &lt;b&gt; bold tag, &lt;em&gt; empasis tag.<br><br>
+							Block elements are those which once created, all the data inserted in it will be within a box.<br><br>
+							For instance, &lt;p&gt; tag, &lt;span&gt; tag, &lt;div&gt; tag.
+
+							For reference, check out this <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675460/lessons/3873828673/concepts/487234380923#">video</a>
+						</p>
+				</div>
+				<div class="description">
+					<h4 class="heading" id="l6">6. HTML Attributes</h4>
+						<div>
+							<p>
+								In Opening tags, some elements accept additional values called <b>attributes</b>. Attributes provide additional information to the browser.
+
+								<br> For example, the anchor tag takes an attribute called <em><u>href</u></em> that defines a URL to link to. &lt;a href="url"&gt; link &lt;/a&gt; Creates a hyperlink to the href attribute value url <br><br>
+
+								and similarly, to names its link &lt;img src="url" alt="text"&gt; Displays the image hosted at the src attribute value "url" (this can also be a path to a local file on your computer). If the image cannot be displayed, then the alt attribute value "text" is shown.
+							</p>
+						</div>
+				</div>
+				<div class="description">
+						<h4 class="heading" id="l7">7.HTML document structure</h4>
+							Basic structure of html documentation for all documents is as mentioned below:<br>
+							<!-- Table tag is used to create tabular structure -->
+							<table>
+							<!--tr tag is used to start table row-->
+								<tr>
+								<!--th tag is used to define or insert data intlo the respective to the tr table column-->
+									<th>Tag</th>
+									<th>Description</th>
+								</tr>
+								<tr>
+									<td><b>&lt;!doctype html&gt;</b></td>
+									<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This informs the browser which version of HTML is used</td>
+								</tr>
+								<tr>
+										<td><b>&lt;head&gt;</b></td>
+										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;head tag has the page title </td>
+								</tr>
+								<tr>
+										<td><b>&lt;title&gt;title name &lt;/title&gt;</b></td>
+										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title tag contains name for the document and can also contain any desired java script or css here</td>
+								</tr>
+								<tr>
+										<td><b>&lt;/head&gt;</b></td>
+										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end of head tag</td>
+								</tr>
+								<tr>
+										<td><b>&lt;body&gt;</b></td>
+										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This tag states the begining of the html document</td>
+								</tr>
+								<tr>
+										<td><b>&lt;all html tags&gt; </b></td>
+										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inside body all the design related to the html document can be inserted, which includes both line and block tags</td>
+								</tr>
+								<tr>
+										<td><b>&lt;/body&gt;</b></td>
+										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end of html document "body"</td>
+								</tr>
+								<tr>
+										<td><b>&lt;/html&gt;</b></td>
+										<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end of html document</td>
+								</tr>
+							</table>
+								This <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345401/modules/385165862675460/lessons/3873828673/concepts/487480250923#"> video</a> explains the structure in depth.
+				</div>
+		<div class="chapter">
+			<h3 id="c2"> Chapter 2:The Basics of the<em>HTML</em> with <em>CSS</em></h3>
+				<div>
+				<div class="description">
+							<h4 class="heading" id="l8">1. What is CSS?</h4>
+							<div>
+							CSS full form is Cascading Style Sheets. HTML elements only give structure to a web page. In order define <b>"Style"</b> we use CSS, some of the examples are font-style,font-size,margin definitions and so on.<br>
+							To understand more about HTML,CSS and java script: Do watch <a href="https://www.youtube.com/watch?v=xIOeccZZ-5g">this</a> video.
+							</div>
+				</div>
+				<div class="description">
+						<h4 class="heading" id="l9">2. Developer tools and usage</h4>
+						<div>
+								Developer tools are proffesional way to access and amend changes to a browser,Examples of developer tools include <b>scrachpad.io</b>, <b>Google chrome browser tools</b>,<b>codepen.io</b>. Of all the tools, Chrome browser is visibly easy and effective. <br>
+								Accessing developer tools in Chrome browser <br><img src="DevTools.gif" alt="">
+						</div>
+				</div>
+				<div class="description">
+						<h4 class="heading" id="l10">3. Tree-Structure in HTML</h4>
+						<div>
+							In HTML, every element is structured as "tree". An element can have any number of other elements ( within itself) called child elements. 
+							To understand this new jargons, watch <a href="https://www.youtube.com/watch?v=y5NbZSvn5N8">this</a> video.	
+						</div>
+				</div>
+				<div class="description">
+						<h4 class="heading" id="l11">4. What is Boxes, grids in HTML documents</h4>
+						<div>
+							A webpage is divided into boxes, each box is divided by the &lt;div&gt; element. each box can hold any data not limited to images, text, videos. Why we use a box structure? it is because a box is the only structure that can use all the space available in a webbrowser and also, the screen displaying the webpage is designed with pixels <br> 
+							
+							Having trouble understanding? watch this <a href="https://www.youtube.com/watch?v=fvtm9lK-JM0">video</a>.
+						</div>
+				</div>
+				</div>
+			</div>
+			<div class="chapter">
+				<div >
+					<h3 id="c3">Chapter 3: Adding <em>CSS</em> style to <em>HTML document</em></h3>
+						<div class="description">
+							<h4 class="heading" id="l12">1. How to define CSS to a HTML document?</h4>
+							<div>
+								As we have already studied, a &lt;title&gt; child class can be &lt;Style&gt; and &lt;link&gt; tags. We use link tag to link a CSS document to a html document. All the style definitons are applied to the current html document.
+								Linking CSS is well explained in this <a href="https://www.youtube.com/watch?v=WkbHHwRgEM0">video</a>					
+							</div>
+						</div>
+				</div>
+				<div class="description">
+					<h4 class="heading" id="l13">2. Understanding CSS</h4>
+						<div>
+								CSS describes style defintion for every but "How to define?" can be deconstructed as mentioned in this example <a href="https://www.youtube.com/watch?v=oaitg9nRqvc">video</a>
+								CSS describes style defintion for every but "How to define?" can be deconstructed as mentioned in this example <a href="https://www.youtube.com/watch?v=oaitg9nRqvc">video</a>
+						</div>
+				</div>
+				<div class="description">
+					<h4 class="heading" id="l14">3. CSS selectors</h4>
+						<div>
+							A Css selector determines what style is being applied to the document. They are two types of selectors<br>
+							<ol type="1">
+								<li><b>Id selector:</b> An Id selector can be defined to every Html element individually, it can be defined in seperated CSS document or can be defined with in the respective tag using <em>style</em> attribute within the tag.
+								</li>
+								<li><b>Class selector:</b> In short, A class selector can be used to defined "set of defintions" to a "perticulat tag" within a perticular document.</li>
+							</ol>
+							Refer to this <a href="https://www.youtube.com/watch?v=EsBmDg_edGQ">video</a> about selectors.
+						</div>
+				</div>
+				
+				<div class="description">
+					<h4 class="heading" id="l15">4. Structure of the Box</h4>
+						<div>
+								Box structure has 4 layers in it. They are as follows:
+								<ol type="i">
+									<li><b>Margin</b></li>
+									<li><b>Border</b></li>
+									<li><b>Padding</b></li>
+									<li><b>Content</b></li>
+								</ol>
+							Check out this <a href="https://www.youtube.com/watch?v=jlp8uLzt16E">video</a>.
+						</div>
+				</div>
+			
+				<div class="description">
+					<h4 class="heading" id="l16">5. How to position the boxes?</h4>
+							Wondering how, check out this <a href="https://www.youtube.com/watch?v=sv2rVjnYfGQ">video</a> for detailed description.
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div>
+		<div class="footer">
+			<font size="1"> Copyright &copy; 2017 Srilakshmi</font>
+			<!-- size attribute can be defined inline or in css-->
+		</div>
+	</div>
+	
+</body>
+	
+</html>
